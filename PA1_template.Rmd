@@ -21,9 +21,17 @@ stepsByDay <- tapply(activityData$steps, activityData$date, sum, na.rm=TRUE)
 
 qplot(stepsByDay, xlab='Total steps per day', ylab='Frequency using binwith 500', binwidth=500)
 
+## Calculate and report the mean and median total number of steps taken per day
+
+stepsByDayMean <- mean(stepsByDay)
+stepsByDayMedian <- median(stepsByDay)
+
+Mean: 9354.23
+Median: 10395
+
 ## What is the average daily activity pattern?
 
-
+averageStepsPerTimeBlock <- aggregate(x=list(meanSteps=activityData$steps), by=list(interval=activityData$interval), FUN=mean, na.rm=TRUE)
 
 ## Imputing missing values
 
