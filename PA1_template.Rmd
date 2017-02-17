@@ -17,6 +17,10 @@ activityData <- read.csv('activity.csv')
 
 stepsByDay <- tapply(activityData$steps, activityData$date, sum, na.rm=TRUE)
 
+## Make a histogram of the total number of steps taken each day
+
+qplot(stepsByDay, xlab='Total steps per day', ylab='Frequency using binwith 500', binwidth=500)
+
 ## What is the average daily activity pattern?
 
 
