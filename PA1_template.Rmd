@@ -15,7 +15,7 @@ activityData <- read.csv('activity.csv')
 
 ## What is mean total number of steps taken per day?
 
-
+stepsByDay <- tapply(activityData$steps, activityData$date, sum, na.rm=TRUE)
 
 ## What is the average daily activity pattern?
 
