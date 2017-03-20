@@ -3,7 +3,7 @@ title: "Reproducible Research: Peer Assessment 1"
 output: 
   html_document:
     keep_md: true
-Code is compiled in R. Since R studio crashed and not working PA1_template.Rm amd PA1_template.HTML could not be generated
+Code is compiled in R. Since R studio crashed and not working PA1_template.md amd PA1_template.HTML could not be generated
 ---
 
 
